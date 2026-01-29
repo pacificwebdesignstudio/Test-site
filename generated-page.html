@@ -1,0 +1,416 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra | Modern Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+        }
+        .flaro-gradient-text {
+            background: linear-gradient(to right, #ffffff, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .flaro-card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .flaro-card:hover {
+            border-color: rgba(52, 211, 153, 0.3);
+        }
+        .flaro-button {
+            background: linear-gradient(90deg, #059669 0%, #10b981 100%);
+        }
+        .flaro-glow {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            filter: blur(60px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-[#050505] text-neutral-300 antialiased selection:bg-emerald-500/30 selection:text-emerald-200 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-[#050505]/80 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500">
+                    <iconify-icon icon="solar:leaf-linear" width="18" stroke-width="1.5"></iconify-icon>
+                </div>
+                TERRA
+            </a>
+            
+            <div class="hidden md:flex items-center gap-1 bg-white/5 p-1 rounded-full border border-white/5">
+                <a href="#services" class="px-5 py-2 rounded-full hover:bg-white/5 text-sm font-medium hover:text-white transition-all duration-300">Services</a>
+                <a href="#projects" class="px-5 py-2 rounded-full hover:bg-white/5 text-sm font-medium hover:text-white transition-all duration-300">Projects</a>
+                <a href="#process" class="px-5 py-2 rounded-full hover:bg-white/5 text-sm font-medium hover:text-white transition-all duration-300">Process</a>
+            </div>
+
+            <a href="#contact" class="hidden md:flex items-center gap-2 text-sm font-semibold text-white bg-white/5 hover:bg-emerald-600 border border-white/10 hover:border-emerald-500 px-6 py-2.5 rounded-lg transition-all duration-300 group">
+                <span>Start Project</span>
+            </a>
+
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-white p-2 rounded-lg border border-white/10 bg-white/5">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="24" stroke-width="1.5"></iconify-icon>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="flaro-glow top-0 left-1/2 -translate-x-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-8">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Accepting new projects Q3
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-bold text-white tracking-tight leading-[1.1] mb-8 max-w-5xl mx-auto">
+                Sculpting nature into <br>
+                <span class="flaro-gradient-text">living architecture.</span>
+            </h1>
+            
+            <p class="text-lg text-neutral-400 max-w-2xl mx-auto leading-relaxed mb-12">
+                We blend modern design principles with organic elements to create sustainable, breathtaking outdoor environments for exclusive properties.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 flaro-button text-white text-sm font-semibold rounded-xl transition-all duration-300 hover:opacity-90 shadow-lg shadow-emerald-900/20">
+                    Request Consultation
+                </button>
+                <button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white text-sm font-semibold rounded-xl transition-all duration-300">
+                    <iconify-icon icon="solar:play-circle-linear" width="20" stroke-width="1.5"></iconify-icon>
+                    View Showreel
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section (Flaro Grid Style) -->
+    <section class="border-y border-white/10 bg-white/[0.02]">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10">
+                <div class="text-center px-4">
+                    <div class="text-4xl font-bold text-white tracking-tight mb-2">150+</div>
+                    <div class="text-xs text-neutral-500 font-semibold uppercase tracking-wide">Projects Completed</div>
+                </div>
+                <div class="text-center px-4">
+                    <div class="text-4xl font-bold text-white tracking-tight mb-2">12</div>
+                    <div class="text-xs text-neutral-500 font-semibold uppercase tracking-wide">Design Awards</div>
+                </div>
+                <div class="text-center px-4">
+                    <div class="text-4xl font-bold text-white tracking-tight mb-2">100%</div>
+                    <div class="text-xs text-neutral-500 font-semibold uppercase tracking-wide">Sustainable</div>
+                </div>
+                <div class="text-center px-4 border-r-0">
+                    <div class="text-4xl font-bold text-white tracking-tight mb-2">15</div>
+                    <div class="text-xs text-neutral-500 font-semibold uppercase tracking-wide">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 md:py-32 relative">
+        <div class="absolute top-1/2 right-0 flaro-glow opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 border-b border-white/10 pb-8">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">Curated services</h2>
+                    <p class="text-neutral-400 max-w-md">Comprehensive landscape architecture from initial concept to final planting.</p>
+                </div>
+                <a href="#" class="inline-flex items-center justify-center h-12 w-12 rounded-full border border-white/10 bg-white/5 text-white hover:bg-emerald-600 hover:border-emerald-500 transition-all duration-300">
+                    <iconify-icon icon="solar:arrow-right-linear" width="20" stroke-width="1.5"></iconify-icon>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="group flaro-card rounded-2xl p-8 relative overflow-hidden transition-all duration-500">
+                    <div class="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="20" stroke-width="1.5" class="text-neutral-500 group-hover:text-emerald-400"></iconify-icon>
+                    </div>
+                    <div class="h-14 w-14 rounded-xl bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-emerald-500 mb-8 shadow-inner">
+                        <iconify-icon icon="solar:ruler-pen-linear" width="28" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Landscape Design</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Precision CAD planning and 3D visualization of your property's potential before a single stone is turned.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group flaro-card rounded-2xl p-8 relative overflow-hidden transition-all duration-500">
+                    <div class="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="20" stroke-width="1.5" class="text-neutral-500 group-hover:text-emerald-400"></iconify-icon>
+                    </div>
+                    <div class="h-14 w-14 rounded-xl bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-emerald-500 mb-8 shadow-inner">
+                        <iconify-icon icon="solar:sprout-linear" width="28" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Hardscaping &amp; Softscaping</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Installation of structured patios, walkways, and retaining walls integrated with native flora placement.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group flaro-card rounded-2xl p-8 relative overflow-hidden transition-all duration-500">
+                    <div class="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="20" stroke-width="1.5" class="text-neutral-500 group-hover:text-emerald-400"></iconify-icon>
+                    </div>
+                    <div class="h-14 w-14 rounded-xl bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-emerald-500 mb-8 shadow-inner">
+                        <iconify-icon icon="solar:waterdrops-linear" width="28" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Irrigation Systems</h3>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Smart water management solutions that minimize waste while keeping your landscape thriving year-round.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section id="projects" class="py-24 bg-[#080808] border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-12">Featured work</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0A0A0A]">
+                    <div class="aspect-[16/10] overflow-hidden relative">
+                        <!-- Image Placeholder -->
+                        <div class="absolute inset-0 bg-neutral-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
+                             <svg class="w-full h-full text-neutral-800 opacity-30" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <pattern id="p1" width="40" height="40" patternUnits="userSpaceOnUse">
+                                        <path d="M0 40L40 0H20L0 20M40 40V20L20 40" stroke="currentColor" stroke-width="1" fill="none"></path>
+                                    </pattern>
+                                </defs>
+                                <rect width="100%" height="100%" fill="url(#p1)"></rect>
+                             </svg>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
+                    </div>
+                    
+                    <div class="p-8 relative z-10 border-t border-white/5">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="text-xs font-bold text-emerald-400 mb-2 uppercase tracking-wider">Residential • 2023</div>
+                                <h3 class="text-2xl font-bold text-white">The Obsidian Garden</h3>
+                            </div>
+                            <a href="#" class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-emerald-600 hover:border-emerald-600 transition-colors">
+                                <iconify-icon icon="solar:arrow-right-up-linear" width="18"></iconify-icon>
+                            </a>
+                        </div>
+                        <p class="text-neutral-400 text-sm line-clamp-2">A minimalist Zen-inspired courtyard featuring dark stone hardscaping and moss beds.</p>
+                    </div>
+                </div>
+
+                 <!-- Project 2 -->
+                 <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0A0A0A]">
+                    <div class="aspect-[16/10] overflow-hidden relative">
+                        <!-- Image Placeholder -->
+                        <div class="absolute inset-0 bg-neutral-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
+                             <svg class="w-full h-full text-neutral-800 opacity-30" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <pattern id="p2" width="20" height="20" patternUnits="userSpaceOnUse">
+                                        <circle cx="2" cy="2" r="1" fill="currentColor"></circle>
+                                    </pattern>
+                                </defs>
+                                <rect width="100%" height="100%" fill="url(#p2)"></rect>
+                             </svg>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
+                    </div>
+                    
+                    <div class="p-8 relative z-10 border-t border-white/5">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="text-xs font-bold text-emerald-400 mb-2 uppercase tracking-wider">Commercial • 2024</div>
+                                <h3 class="text-2xl font-bold text-white">Vertex Corporate Plaza</h3>
+                            </div>
+                            <a href="#" class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-emerald-600 hover:border-emerald-600 transition-colors">
+                                <iconify-icon icon="solar:arrow-right-up-linear" width="18"></iconify-icon>
+                            </a>
+                        </div>
+                        <p class="text-neutral-400 text-sm line-clamp-2">Sustainable urban park design integrating seating areas and drought-resistant vertical gardens.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="flaro-glow left-0 top-1/2 -translate-y-1/2 opacity-30"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-transparent border border-emerald-500/20 text-emerald-400 mb-10">
+                <iconify-icon icon="solar:quote-up-square-linear" width="32" stroke-width="1.5"></iconify-icon>
+            </div>
+            <h3 class="text-3xl md:text-5xl font-semibold text-white leading-tight mb-10 tracking-tight">
+                "Terra transformed our overgrown backyard into a sanctuary. The attention to detail was impeccable."
+            </h3>
+            <div class="flex flex-col items-center justify-center gap-2">
+                <div class="text-white text-base font-bold">Elena Sterling</div>
+                <div class="text-neutral-500 text-sm font-medium">Modernist Home Owner</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-[#0A0A0A] border border-white/10 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row gap-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+                
+                <div class="md:w-5/12 relative z-10 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to transform your space?</h2>
+                        <p class="text-neutral-400 text-lg mb-8">Leave your details and we will contact you within 24 hours to discuss your vision.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 text-neutral-300">
+                                <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+                                    <iconify-icon icon="solar:phone-linear" width="20"></iconify-icon>
+                                </div>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-neutral-300">
+                                <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+                                    <iconify-icon icon="solar:letter-linear" width="20"></iconify-icon>
+                                </div>
+                                <span>hello@terra.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-7/12 relative z-10">
+                    <form class="space-y-5 bg-white/[0.02] p-8 rounded-2xl border border-white/5">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-neutral-400 mb-2 uppercase tracking-wide">First Name</label>
+                                <input type="text" class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-neutral-700" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-neutral-400 mb-2 uppercase tracking-wide">Last Name</label>
+                                <input type="text" class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-neutral-700" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-neutral-400 mb-2 uppercase tracking-wide">Email</label>
+                            <input type="email" class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-neutral-700" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-neutral-400 mb-2 uppercase tracking-wide">Interest</label>
+                            <div class="relative">
+                                <select class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all appearance-none cursor-pointer">
+                                    <option>Landscape Design</option>
+                                    <option>Hardscaping</option>
+                                    <option>Maintenance</option>
+                                </select>
+                                <iconify-icon icon="solar:alt-arrow-down-linear" class="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-500 pointer-events-none" width="16"></iconify-icon>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-2">
+                            <button type="button" class="w-full flaro-button text-white font-semibold py-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-emerald-900/40 flex items-center justify-center gap-2">
+                                <span>Get Free Consultation</span>
+                                <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-[#050505] pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-500 text-white flex items-center justify-center">
+                            <iconify-icon icon="solar:leaf-bold" width="16"></iconify-icon>
+                        </div>
+                        TERRA
+                    </a>
+                    <p class="text-sm text-neutral-400 mb-8 leading-relaxed">
+                        Designing the future of outdoor living spaces with sustainability and modern aesthetics at the core.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                            <iconify-icon icon="solar:brand-instagram-linear" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                            <iconify-icon icon="solar:brand-twitter-linear" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                            <iconify-icon icon="solar:brand-linkedin-linear" width="20"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm text-neutral-500">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Press</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm text-neutral-500">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Residential Design</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Commercial Landscapes</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Irrigation Planning</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Garden Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Legal</h4>
+                    <ul class="space-y-3 text-sm text-neutral-500">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-neutral-600 font-medium">
+                <p>© 2024 Terra Landscaping Inc. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <span class="flex items-center gap-1.5">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        </span>
+                        All systems operational
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body></html>
